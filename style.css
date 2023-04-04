@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+html {
+    background-color: hsl(222, 26%, 31%);
+}
+* {
+    font-family: 'League Spartan', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+.main {
+    width: 550px;
+}
+.top {
+    color: white;
+    display: flex;
+}
+.top-header {
+    margin-left: 370px;
+    display: flex;
+}
+.left {
+    font-size: 30px;
+    font-weight: bold;
+}
+.right {
+    font-size: 13px;
+}
+.theme {
+    margin-top: 10px;
+}
+.middle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: hsl(224, 36%, 15%);
+    height: 125px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding-right: 30px;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    overflow: hidden;
+}
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 25px;
+    height: 475px;
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 8px;
+    padding: 40px;
+}
+button {
+    border-radius: 8px;
+    font-size: 32px;
+    font-weight: bold;
+    border-bottom-width: 8px;
+    color: hsl(221, 14%, 31%);
+    border-style: none;
+    box-shadow: 0px 4px 0px hsl(35, 11%, 61%);
+    background-color: hsl(45, 7%, 89%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8px;
+}
+button:hover {
+    cursor: pointer;
+}
+.reset {
+    background-color: hsl(225, 21%, 49%); 
+    grid-column: 1/3;
+    grid-row: 5;
+    font-size: 25px;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0px 4px 0px hsl(224, 28%, 35%);
+}
+.delete {
+    background-color: hsl(225, 21%, 49%); 
+    font-size: 25px;
+    color: white;
+    box-shadow: 0px 4px 0px hsl(224, 28%, 35%);
+}
+.nine {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.equals {
+    grid-column: 3/5;
+    grid-row: 5;
+    font-size: 25px;
+    background-color: hsl(6, 63%, 50%);
+    color: white;
+    box-shadow: 0px 4px 0px hsl(6, 70%, 34%);
+}
+/* new code below */
+.redButton.horizTranslate2 { -webkit-transition: -webkit-transform 0.1s linear; -webkit-transform: translateX(20px);} /* moves the button across the x-axis */
+.redButton.horizTranslate3 { -webkit-transition: -webkit-transform 0.1s linear; -webkit-transform: translateX(40px);}
+.redButton.horizTranslate1 { -webkit-transition: -webkit-transform 0.1s linear; -webkit-transform: translateX(0px);}
+#outerContainer{position:relative; width:111px; height:98px; background-color:hsl(222, 26%, 31%); margin-top: -45px;}
+#buttonContainer{background-color: #222D41; width:71px; height:28px; position:relative; left:20px; top:45px; border-radius:14px;}
+.redButton{width:16px; height:16px; background-color:#DB3D2B; border-radius:8px; position:relative; top:6px; left:6px; z-index: 5;}
+#legendTextContainer{left:22px; display:inline-flex;position:absolute; top:23px; color:#ffffff;font-family:Arial; font-size:10pt;text-align:center;}
+.legendText{display:inline-block;width:20px; padding-bottom:33px; cursor:default; user-select: none;}
+#message{border:1px solid #cccccc; display:inline-block; padding:4px; margin-top: 6px; font-family:Arial; font-size:10pt;}
+/* new code above */
+@media only screen and (max-width: 700px) {
+    body {
+        justify-content: center; 
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+    .top-header {
+        margin-left: 155px;
+    }
+    .main {
+        width: 340px;
+    }
+    .middle {
+        height: 90px;
+        font-size: 40px;
+        padding-right: 15px;
+    }
+    button {
+        border-radius: 6px;
+        font-size: 28px;
+    }
+    .grid {
+        gap: 15px;
+        padding: 20px;
+        height: 400px;
+    }
+    .reset {
+        font-size: 20px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .equals {
+        font-size: 20px;
+    }
+    .delete {
+        font-size: 20px;
+    }
+}

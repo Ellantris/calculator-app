@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Calculator app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main" id="main">
+    <div class="top">
+      <div class="left color-one">calc</div>
+      <div class="top-header right">
+        <div class="theme color-one">THEME</div>
+        <div id="outerContainer">
+          <div id="buttonContainer">
+            <div class="redButton" id="redButton"></div>
+          </div>
+          <div id="legendTextContainer">
+            <div class="legendText color-one" onclick="go_to_1()">1</div>
+            <div class="legendText color-one" onclick="go_to_2()">2</div>
+            <div class="legendText color-one" onclick="go_to_3()">3</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="middle" id="middle">
+      <p class="color-one" id="display-text">0</p>
+    </div>
+    <grid class="grid" id="grid">
+      <button class="seven num-button">7</button>
+      <button class="eight num-button">8</button>
+      <button class="nine num-button">9</button>
+      <button class="delete type-one-button">DEL</button>
+      <button class="four num-button">4</button>
+      <button class="five num-button">5</button>
+      <button class="six num-button">6</button>
+      <button class="plus num-button">+</button>
+      <button class="one num-button">1</button>
+      <button class="two num-button">2</button>
+      <button class="three num-button">3</button>
+      <button class="minus num-button">-</button>
+      <button class="period num-button">.</button>
+      <button class="zero num-button">0</button>
+      <button class="divide num-button">/</button>
+      <button class="multiply num-button">x</button>
+      <button class="reset type-one-button">RESET</button>
+      <button class="equals type-two-button">=</button>
+    </grid>
+  </div>
+  <script defer src="app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</body>
+</html>
